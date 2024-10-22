@@ -1,4 +1,4 @@
-table {
+/* table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
@@ -15,6 +15,45 @@ th {
   font-weight: bold;
   background-color: #f2f2f2;
   cursor: pointer;
+} */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Invited Header Styles */
+.invited-header {
+  background-color: #e6f3ff;
+  color: #007bff;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
+}
+
+.invited-header th:hover {
+  background-color: #0056b2;
+  color: white;
+}
+
+/* Not Invited Header Styles */
+.not-invited-header {
+  background-color: #ffebee;
+  color: #d32f2f;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(221, 68, 75, 0.2);
+}
+
+.not-invited-header th:hover {
+  background-color: #c62828;
+  color: white;
 }
 
 .dangerous-button {
