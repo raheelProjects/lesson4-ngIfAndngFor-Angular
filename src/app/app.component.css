@@ -1,21 +1,6 @@
-/* table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
+h1 {
+  text-align: center;
 }
-
-th,
-td {
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
-
-th {
-  font-weight: bold;
-  background-color: #f2f2f2;
-  cursor: pointer;
-} */
 
 table {
   width: 100%;
@@ -54,6 +39,41 @@ td {
 .not-invited-header th:hover {
   background-color: #c62828;
   color: white;
+}
+
+/* Invited Body Styles */
+.invited-body tr {
+  background-color: #ffffff;
+}
+
+.invited-body tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.invited-body tr:hover {
+  background-color: #e6f3ff;
+}
+
+/* Not Invited Body Styles */
+.not-invited-body tr {
+  background-color: #fff3f5;
+}
+
+.not-invited-body tr:nth-child(even) {
+  background-color: #fcebeb;
+}
+
+.not-invited-body tr:hover {
+  background-color: #ffebee;
+}
+
+/* Zebra Striping */
+tbody tr:nth-child(odd) {
+  background-color: #f9fafc;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
 }
 
 .dangerous-button {

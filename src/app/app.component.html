@@ -6,7 +6,7 @@
 </button>
 
 <ng-template #invitedShow>
-  <p>Showing Invited People</p>
+  <h1>Showing Invited People</h1>
   <table>
     <thead>
       <tr class="invited-header">
@@ -15,7 +15,7 @@
         <th>change invite</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody class="invited-body">
       <tr *ngFor="let guest of guests">
         <td *ngIf="guest.isInvited">{{ guest.id }}</td>
         <td *ngIf="guest.isInvited">{{ guest.name }}</td>
@@ -33,7 +33,7 @@
 </ng-template>
 
 <ng-template #invitedNotShow>
-  <p>Show Uninvited People</p>
+  <h1>Show Uninvited People</h1>
   <table>
     <thead>
       <tr class="not-invited-header">
@@ -42,7 +42,7 @@
         <th>change invite</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody class=".not-invited-body">
       <tr *ngFor="let guest of guests">
         <td *ngIf="!guest.isInvited">{{ guest.id }}</td>
         <td *ngIf="!guest.isInvited">{{ guest.name }}</td>
