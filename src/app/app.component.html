@@ -1,7 +1,7 @@
 <ng-container *ngIf="showInvite; then invitedShow; else invitedNotShow">
 </ng-container>
 
-<button (click)="changeShowStatus()">
+<button class="normalButton" (click)="changeShowStatus()">
   {{ showInvite ? "show Uninvited people" : "show Invited people" }}
 </button>
 

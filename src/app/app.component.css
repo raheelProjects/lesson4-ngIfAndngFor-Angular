@@ -76,6 +76,8 @@ tbody tr:nth-child(even) {
   background-color: #f8f9fa;
 }
 
+/*      Dangerous / cancel Button           */
+
 .dangerous-button {
   display: inline-block;
   padding: 10px 20px;
@@ -100,6 +102,8 @@ tbody tr:nth-child(even) {
   transform: translateY(1px);
 }
 
+/*      Primary Button           */
+
 .primary-button {
   display: inline-block;
   padding: 10px 20px;
@@ -122,5 +126,31 @@ tbody tr:nth-child(even) {
 .primary-button:active {
   background-color: #238023;
   box-shadow: 0 2px 4px rgba(52, 199, 89, 0.3);
+  transform: translateY(1px);
+}
+
+/*      Normal Button           */
+.normalButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(to bottom, #007bff, #0056b2);
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.normalButton:hover {
+  background-position: bottom center;
+  box-shadow: 0 6px 8px rgba(0, 123, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.normalButton:active {
+  background-color: #0056b2;
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.3);
   transform: translateY(1px);
 }
