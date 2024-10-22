@@ -6,7 +6,7 @@
 </button>
 
 <ng-template #invitedShow>
-  <p>Show Invited People</p>
+  <p>Showing Invited People</p>
   <table>
     <thead>
       <tr>
@@ -20,7 +20,10 @@
         <td *ngIf="guest.isInvited">{{ guest.id }}</td>
         <td *ngIf="guest.isInvited">{{ guest.name }}</td>
         <td *ngIf="guest.isInvited">
-          <button (click)="changeInvite(guest.id, guest.isInvited)">
+          <button
+            class="dangerous-button"
+            (click)="changeInvite(guest.id, guest.isInvited)"
+          >
             cancel invitation
           </button>
         </td>
@@ -30,7 +33,7 @@
 </ng-template>
 
 <ng-template #invitedNotShow>
-  <p>Show Invited People</p>
+  <p>Show Uninvited People</p>
   <table>
     <thead>
       <tr>
@@ -44,7 +47,10 @@
         <td *ngIf="!guest.isInvited">{{ guest.id }}</td>
         <td *ngIf="!guest.isInvited">{{ guest.name }}</td>
         <td *ngIf="!guest.isInvited">
-          <button (click)="changeInvite(guest.id, guest.isInvited)">
+          <button
+            class="primary-button"
+            (click)="changeInvite(guest.id, guest.isInvited)"
+          >
             send invitation
           </button>
         </td>

@@ -1,0 +1,67 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-weight: bold;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.dangerous-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(to bottom, #ff0000, #ff3333);
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(255, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.dangerous-button:hover {
+  background-position: bottom center;
+  box-shadow: 0 6px 8px rgba(255, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.dangerous-button:active {
+  background-color: #ff0000;
+  box-shadow: 0 2px 4px rgba(255, 0, 0, 0.3);
+  transform: translateY(1px);
+}
+
+.primary-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(to bottom, #34c759, #238023);
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(52, 199, 89, 0.2);
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.primary-button:hover {
+  background-position: bottom center;
+  box-shadow: 0 6px 8px rgba(52, 199, 89, 0.3);
+  transform: translateY(-2px);
+}
+
+.primary-button:active {
+  background-color: #238023;
+  box-shadow: 0 2px 4px rgba(52, 199, 89, 0.3);
+  transform: translateY(1px);
+}
